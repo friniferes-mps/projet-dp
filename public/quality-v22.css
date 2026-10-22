@@ -1,0 +1,24 @@
+/* V22 cinematic mission layout: real UI text; images are decorative only. */
+.projector-mode .mission-scene{width:min(100%,1640px);margin:0 auto;color:#f8fbff!important;padding:12px 22px 32px!important;min-height:calc(100vh - 60px);background:radial-gradient(ellipse at 14% 18%,#253e8560,transparent 45%),radial-gradient(ellipse at 86% 85%,#6a2c9a35,transparent 50%),#080f2b!important}
+.projector-mode .mission-scene .mission-heading{text-align:center!important;color:#fff!important;font-size:clamp(32px,3.25vw,58px)!important;line-height:1.1!important;margin:6px auto 18px!important;max-width:95%;text-shadow:0 3px 18px #0008!important}
+.projector-mode .mission-scene .missionLayout{display:grid!important;grid-template-columns:minmax(0,1.16fr) minmax(0,.84fr)!important;gap:22px!important;align-items:stretch!important}
+.projector-mode .mission-scene .scenario-panel,.projector-mode .mission-scene .answers-panel{background:linear-gradient(145deg,#0d2458,#10153e)!important;border:2px solid #4a8bff!important;border-radius:25px!important;box-shadow:0 0 35px #3268f527,0 14px 40px #0006!important;padding:18px!important;min-width:0!important;color:#fff!important}
+.projector-mode .mission-scene .scenario-panel{display:flex!important;flex-direction:column!important;gap:12px!important}
+.projector-mode .mission-scene .mission-art-wrap{aspect-ratio:16/8.5!important;min-height:0!important;max-height:none!important;width:100%!important;overflow:hidden!important;background:#0d163a!important;border:1px solid #65b8ff!important;border-radius:20px!important;box-shadow:0 0 28px #478aff4a!important}
+.projector-mode .mission-scene .mission-art-wrap img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;display:block!important}
+.projector-mode .mission-scene .scenario{font-size:clamp(20px,1.7vw,30px)!important;font-weight:750!important;line-height:1.35!important;color:#fff!important;margin:0!important;overflow-wrap:anywhere}
+.projector-mode .mission-scene .chip{color:#d7faff!important;background:#143e77!important;border:1px solid #5ccfff!important;font-size:clamp(13px,1vw,17px)!important}
+.projector-mode .mission-scene .eyebrow{color:#74e5ff!important;font-size:clamp(15px,1.1vw,21px)!important;font-weight:900!important;letter-spacing:.08em!important}
+.projector-mode .mission-scene .answers-panel{display:flex!important;flex-direction:column!important;gap:13px!important}
+.projector-mode .mission-scene .reveal-choice{display:flex!important;align-items:center!important;gap:16px!important;background:linear-gradient(100deg,#18336c,#101f4d)!important;color:#fff!important;border:2px solid #568eff!important;border-radius:18px!important;padding:16px 18px!important;min-height:94px!important;font-size:clamp(19px,1.5vw,28px)!important;font-weight:750!important;line-height:1.28!important;text-shadow:none!important;opacity:1!important}
+.projector-mode .mission-scene .reveal-choice .letter{display:grid!important;place-items:center!important;flex:0 0 56px!important;width:56px!important;height:56px!important;border-radius:50%!important;background:linear-gradient(140deg,#256dff,#6d4dff)!important;color:#fff!important;font-size:29px!important;box-shadow:0 0 16px #5489ff80!important}
+.projector-mode .mission-scene .reveal-choice:nth-of-type(3) .letter{background:linear-gradient(135deg,#f17824,#ff4e6b)!important}
+.projector-mode .mission-scene .reveal-choice:nth-of-type(4) .letter{background:linear-gradient(135deg,#7e40ef,#bd3df5)!important}
+.projector-mode .mission-scene .mini-prompt,.projector-mode .mission-scene .projection-status{color:#d6e8ff!important;opacity:1!important;font-size:clamp(15px,1vw,20px)!important}
+.projector-mode .mission-scene .round-progress{margin-top:auto!important}
+.projector-mode .mission-scene .answer-reveal{background:#103e3b!important;color:#fff!important;border:2px solid #61ffc4!important}
+.projector-mode .mission-scene .answer-reveal p,.projector-mode .mission-scene .answer-reveal small{color:#eafff6!important}
+.projector-mode .mission-scene .reveal-choice.correct{background:linear-gradient(115deg,#0b604a,#103d51)!important;border-color:#62ffbd!important;box-shadow:0 0 32px #45ffb866!important}
+.projector-mode .mission-scene .reveal-choice.wrong{opacity:.7!important}
+@media(max-width:1050px){.projector-mode .mission-scene .missionLayout{grid-template-columns:1fr!important}.projector-mode .mission-scene .mission-art-wrap{max-height:320px!important}.projector-mode .mission-scene .reveal-choice{min-height:65px!important}}
+@media(prefers-reduced-motion:reduce){.projector-mode .mission-scene *{animation:none!important;transition:none!important}}

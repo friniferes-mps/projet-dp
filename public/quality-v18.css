@@ -1,0 +1,34 @@
+/* V18: projector legibility + art framing, source text remains HTML (not embedded in images) */
+body.projector-mode,body.projector-mode .project-scene{color:#f9fbff!important}
+body.projector-mode .project-scene{padding-top:clamp(92px,9vh,130px)!important}
+body.projector-mode .project-scene h1,body.projector-mode .project-scene h2,body.projector-mode .project-scene h3{color:#fff!important;text-shadow:none!important;opacity:1!important}
+body.projector-mode .project-scene .muted,body.projector-mode .project-scene p,body.projector-mode .project-scene .tagline{color:#e6edff!important;opacity:1!important}
+body.projector-mode .project-scene .pageTitle{color:#fff!important;font-weight:850!important;font-size:clamp(34px,3.65vw,62px)!important;line-height:1.12!important;overflow-wrap:anywhere!important}
+body.projector-mode .project-scene .eyebrow{color:#7ae7ff!important;font-weight:800!important}
+body.projector-mode .project-scene .panel{background:linear-gradient(145deg,#132451,#081532)!important;border:1px solid #6784ed!important}
+body.projector-mode .project-scene .choice{color:#fff!important;background:#182b5a!important;border:1px solid #6689e4!important;font-size:clamp(17px,1.4vw,24px)!important}
+body.projector-mode .project-scene .choice .letter{color:#fff!important;flex-shrink:0}
+body.projector-mode .project-scene .scenario{color:#fff!important;font-weight:650!important;font-size:clamp(19px,1.72vw,29px)!important;line-height:1.38!important}
+body.projector-mode .project-scene .studio-art img{object-fit:contain!important;object-position:center!important}
+body.projector-mode .mission-scene .missionLayout{grid-template-columns:minmax(0,1fr) minmax(0,1.12fr)!important;gap:clamp(16px,2vw,28px)!important}
+body.projector-mode .mission-scene .scenario-panel,body.projector-mode .mission-scene .answers-panel{padding:clamp(18px,1.6vw,28px)!important;min-width:0!important}
+body.projector-mode .mission-art-wrap{width:100%;height:clamp(165px,28vh,330px);margin:0 0 18px;border-radius:18px;overflow:hidden;background:#07122b;display:flex;align-items:center;justify-content:center;border:2px solid #5b7ce3;box-shadow:0 0 30px #236eff38}
+body.projector-mode .mission-art-wrap img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
+body.projector-mode .mission-scene .choice{margin:8px 0!important;padding:clamp(11px,1vw,18px)!important}
+body.projector-mode .ranking-show{display:grid!important;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)!important;gap:28px!important;align-items:stretch!important}
+body.projector-mode .ranking-show>.studio-art{height:clamp(390px,64vh,750px)!important;width:100%!important}
+body.projector-mode .ranking-list{padding:clamp(18px,2vw,30px)!important;display:flex;flex-direction:column;justify-content:center;gap:10px}
+body.projector-mode .ranking-row{display:flex!important;align-items:center!important;gap:18px!important;padding:14px!important;background:#142956!important;border:1px solid #4666b6!important;border-radius:16px!important;min-height:70px!important}
+body.projector-mode .ranking-row .ranking-badge{display:grid;place-items:center;width:52px;height:52px;flex:none;border-radius:50%;font-size:22px;font-weight:900;background:#2555c9;color:#fff;border:2px solid #69d5ff}
+body.projector-mode .ranking-row:first-child .ranking-badge{background:#ae7b1a;border-color:#ffdb7b;color:#fff}
+body.projector-mode .ranking-name{display:flex;flex-direction:column;min-width:0;flex:1}
+body.projector-mode .ranking-name b{font-size:clamp(19px,1.5vw,27px);color:#fff}
+body.projector-mode .ranking-name span{font-size:clamp(13px,1vw,17px);color:#d7e6ff}
+body.projector-mode .ranking-status{font-size:clamp(10px,.85vw,14px);color:#a9f1e7;font-weight:800;text-align:right}
+body.projector-mode .ranking-show .wow-trophy{display:none!important}
+body.projector-mode .project-scene .teaching-note{color:#f0f4ff!important;background:#142956!important}
+body.projector-mode .project-scene .definition-grid .panel{overflow:visible!important}
+body.projector-mode .project-scene .definition-grid .studio-art{height:clamp(210px,27vh,320px)!important}
+body.projector-mode .project-scene .capsule-copy p{font-size:clamp(19px,1.7vw,28px)!important;color:#f2f5ff!important}
+body.projector-mode .project-scene .capsule-copy h2{font-size:clamp(30px,3vw,53px)!important}
+@media(max-width:900px){body.projector-mode .ranking-show,body.projector-mode .mission-scene .missionLayout{grid-template-columns:1fr!important}body.projector-mode .ranking-show>.studio-art{height:330px!important}body.projector-mode .mission-art-wrap{height:240px}}
