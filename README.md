@@ -3,6 +3,14 @@
 Présentation DP3 · Gestion du stress et des émotions · ESC Tunis / Manouba
 Présentateurs : Frini Fares et Mahmoud Ben Mansour.
 
+## Hébergement Netlify
+
+Le site publié utilise les fonctions Netlify pour les routes `/api/*` et Netlify Database pour conserver la session, les participants, les votes et les scores. Les migrations du dossier `netlify/database/migrations` sont appliquées automatiquement au déploiement. Aucun serveur `npm start` permanent n’est nécessaire sur Netlify.
+
+Les pages de la régie, de la projection et des participants récupèrent l’état du jeu chaque seconde. Le lien de participation utilise l’adresse publique du site ; les joueurs peuvent rejoindre depuis des réseaux différents. Une session active reste réservée pendant une heure, comme dans la version locale.
+
+`npm start` reste disponible pour lancer la version locale sur le port 3000. Cette version locale conserve les données en mémoire et les perd à son redémarrage.
+
 ## Lancer sur Mac
 1. Installer Node.js 20+ si nécessaire.
 2. Dans le dossier, ouvrir Terminal et lancer `npm start`.
